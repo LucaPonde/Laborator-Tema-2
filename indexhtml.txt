@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Ponde Luca</title>
+
+    <!-- Legătura către fișierul CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Ponde Luca – Monitorizare Sistem & Resurse</h1>
+
+<div class="header-box">
+    <h2>Date de contact</h2>
+    <p><strong>Nume:</strong> Ponde Luca</p>
+    <p><strong>Email:</strong> 
+        <a href="mailto:Ponde.Ma.Luca@student.utcluj.ro">
+            Ponde.Ma.Luca@student.utcluj.ro
+        </a>
+    </p>
+</div>
+
+<h2>Tabel – Resurse din Task Manager & Resource Monitor</h2>
+
+<table>
+    <tr>
+        <th>Resursă</th>
+        <th>Valoare Observată</th>
+        <th>Observații</th>
+    </tr>
+
+    <tr>
+        <td>CPU</td>
+        <td>~8%</td>
+        <td>Încărcare scăzută cu aplicații multiple deschise</td>
+    </tr>
+
+    <tr>
+        <td>Memorie RAM</td>
+        <td>66% (~6–7 GB)</td>
+        <td>Chrome consumă 2.4 GB, Teams ~630 MB, Edge ~400 MB</td>
+    </tr>
+
+    <tr>
+        <td>Disk</td>
+        <td>0%</td>
+        <td>Fără activitate de citire/scriere</td>
+    </tr>
+
+    <tr>
+        <td>Porturi deschise</td>
+        <td>443, 5222, 8009, 62766 etc.</td>
+        <td>Porturi HTTPS și servicii locale</td>
+    </tr>
+
+    <tr>
+        <td>Proces principal</td>
+        <td>chrome.exe (17 procese)</td>
+        <td>Cel mai mare consumator de RAM – 2.4 GB</td>
+    </tr>
+
+    <tr>
+        <td>Servicii active</td>
+        <td>WhatsApp, Teams, Edge, Chrome</td>
+        <td>Trafic redus în Resource Monitor</td>
+    </tr>
+</table>
+
+<h2>Slideshow Resurse</h2>
+
+<div class="slideshow-container">
+
+    <div class="slides">
+        <img src="taskmanager.png" alt="Task Manager Screenshot">
+    </div>
+
+    <div class="slides">
+        <img src="resmon.png" alt="Resource Monitor Screenshot">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Legătura către fișierul JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

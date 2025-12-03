@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Pagina Ponde Luca</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f3f3;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+    }
+
+    .header-box {
+        background-color: orange;
+        color: black;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th {
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    td {
+        background-color: orange;
+        padding: 10px;
+    }
+
+    /* SLIDESHOW */
+    .slideshow-container {
+        position: relative;
+        max-width: 700px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .slides {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 12px;
+        color: white;
+        font-weight: bold;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Ponde Luca – Monitorizare Sistem & Resurse</h1>
+
+<div class="header-box">
+    <h2>Date de contact</h2>
+    <p><strong>Nume:</strong> Ponde Luca</p>
+    <p><strong>Email:</strong> 
+        <a href="mailto:Ponde.Ma.Luca@student.utcluj.ro">
+            Ponde.Ma.Luca@student.utcluj.ro
+        </a>
+    </p>
+</div>
+
+<h2>Tabel – Resurse din Task Manager & Resource Monitor</h2>
+
+<table>
+    <tr>
+        <th>Resursă</th>
+        <th>Valoare Observată</th>
+        <th>Observații</th>
+    </tr>
+
+    <tr>
+        <td>CPU</td>
+        <td>~8%</td>
+        <td>Încărcare scăzută cu aplicații multiple deschise</td>
+    </tr>
+
+    <tr>
+        <td>Memorie RAM</td>
+        <td>66% (~6–7 GB)</td>
+        <td>Chrome consumă 2.4 GB, Teams ~630 MB, Edge ~400 MB</td>
+    </tr>
+
+    <tr>
+        <td>Disk</td>
+        <td>0%</td>
+        <td>Fără activitate de citire/scriere</td>
+    </tr>
+
+    <tr>
+        <td>Porturi deschise</td>
+        <td>443, 5222, 8009, 62766 etc.</td>
+        <td>Porturi HTTPS și servicii locale</td>
+    </tr>
+
+    <tr>
+        <td>Proces principal</td>
+        <td>chrome.exe (17 procese)</td>
+        <td>Cel mai mare consumator de RAM – 2.4 GB</td>
+    </tr>
+
+    <tr>
+        <td>Servicii active</td>
+        <td>WhatsApp, Teams, Edge, Chrome</td>
+        <td>Trafic redus în Resource Monitor</td>
+    </tr>
+</table>
+
+<h2>Slideshow Resurse</h2>
+
+<div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="slides">
+        <img src="C:/Users/Luca/Desktop/taskmanager.png" alt="Task Manager Screenshot">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slides">
+        <img src="C:/Users/Luca/Desktop/resmon.png" alt="Resource Monitor Screenshot">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

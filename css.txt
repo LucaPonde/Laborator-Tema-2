@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.header-box {
+    background-color: orange;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    background-color: orange;
+    padding: 10px;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.slides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
