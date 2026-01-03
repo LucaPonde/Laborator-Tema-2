@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Ponde Luca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Ponde Luca – Monitorizare Sistem & Resurse</h1>
+
+    <div class="header-box">
+        <h2>Date de contact</h2>
+        <p><strong>Nume:</strong> Ponde Luca</p>
+        <p><strong>Email:</strong> 
+            <a href="mailto:Ponde.Ma.Luca@student.utcluj.ro">
+                Ponde.Ma.Luca@student.utcluj.ro
+            </a>
+        </p>
+    </div>
+
+    <h2>Tabel – Resurse din Task Manager & Resource Monitor</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Resursă</th>
+                <th>Valoare Observată</th>
+                <th>Observații</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CPU</td>
+                <td>~8%</td>
+                <td>Încărcare scăzută cu aplicații multiple deschise</td>
+            </tr>
+            <tr>
+                <td>Memorie RAM</td>
+                <td>66% (~6–7 GB)</td>
+                <td>Chrome consumă 2.4 GB, Teams ~630 MB, Edge ~400 MB</td>
+            </tr>
+            <tr>
+                <td>Disk</td>
+                <td>0%</td>
+                <td>Fără activitate de citire/scriere</td>
+            </tr>
+            <tr>
+                <td>Porturi deschise</td>
+                <td>443, 5222, 8009, 62766 etc.</td>
+                <td>Porturi HTTPS și servicii locale</td>
+            </tr>
+            <tr>
+                <td>Proces principal</td>
+                <td>chrome.exe (17 procese)</td>
+                <td>Cel mai mare consumator de RAM – 2.4 GB</td>
+            </tr>
+            <tr>
+                <td>Servicii active</td>
+                <td>WhatsApp, Teams, Edge, Chrome</td>
+                <td>Trafic redus în Resource Monitor</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section id="monitorizare-resurse-sectiune" ondblclick="startAutomaticSlideshow()">
+        <h2>Monitorizare resurse</h2>
+        <p class="instrucliu"> (Dublu click pe acest titlu/secțiune pentru slideshow automat la 3 secunde) </p>
+
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="taskmanager.png.png" alt="Task Manager" style="width:100%">
+                <div class="caption">Task Manager - Procese Active</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="resmon.png.png" alt="Resource Monitor" style="width:100%">
+                <div class="caption">Resource Monitor - Analiză Generală</div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="image.png" alt="Resource Monitor Detalii" style="width:100%">
+                <div class="caption">Resource Monitor - Detalii Avansate</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
